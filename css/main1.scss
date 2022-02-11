@@ -1,0 +1,24 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+    margin: 0;
+    background-color: rgb(221, 253, 253);
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.tarjeta {
+    box-sizing: border-box;
+    padding: 1rem;
+    border: 1px solid #fcfc57;
+    background-color: #fdfdde;
+
+    &.min {
+        width: min(500px, 70%);
+    }
+}

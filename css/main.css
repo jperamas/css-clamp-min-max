@@ -1,0 +1,151 @@
+:root {
+  --fuente-texto: 'Poppins', sans-serif;
+  --fondo: #e5ecec;
+  --link: #223e98;
+  --titulo-fondo: #478f00;
+  --ancho-fondo: #fcbaa2;
+  --tarjeta-fondo: #fff;
+  --tarjeta-sombra: rgba(0, 0, 0, 0.25);
+  --introduccion-fondo: #223e98;
+  --introduccion-texto: #fff;
+  --introduccion-titulo: #4eba77;
+  --conclusion-fondo: #4eba77;
+  --conclusion-texto: #fff;
+  --conclusion-titulo: #223e98;
+}
+
+body {
+  font-family: var(--fuente-texto);
+  line-height: 1.5;
+  margin: 0;
+  background-color: var(--fondo);
+}
+
+section {
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  width: 100%;
+}
+
+ul {
+  margin: 0 auto;
+  width: clamp(300px, 50vw, 600px);
+}
+
+li {
+  font-size: clamp(0.875rem, 3vw, 1.25rem);
+  word-break: break-word;
+}
+
+a, a:link {
+  color: var(--link);
+  text-decoration: none;
+  font-size: 1rem;
+  word-break: break-word;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+section.introduccion {
+  background-color: var(--introduccion-fondo);
+  color: var(--introduccion-texto);
+}
+
+section h1 {
+  text-align: center;
+  margin: 0 0 1rem;
+  font-size: clamp(1.25rem, 5vw, 2.75rem);
+}
+
+section.introduccion h1 {
+  color: var(--introduccion-titulo);
+}
+
+section.conclusion {
+  background-color: var(--conclusion-fondo);
+  color: var(--conclusion-texto);
+}
+
+section.conclusion h1 {
+  color: var(--conclusion-titulo);
+}
+
+.tarjeta {
+  position: relative;
+  box-sizing: border-box;
+  padding: 1rem;
+  background-color: var(--tarjeta-fondo);
+  box-shadow: 0 0 3em var(--tarjeta-sombra);
+  border-radius: 0 0 0.25rem 0.25rem;
+}
+
+.tarjeta h2 {
+  padding: 0.25rem 0;
+  margin: -1rem -1rem 1rem;
+  text-align: center;
+  font-size: clamp(1.5rem, 5vw, 3rem);
+  background-color: var(--titulo-fondo);
+  border-radius: 0.25rem 0.25rem 0 0;
+}
+
+.tarjeta h4 {
+  margin: 0 0 0.5rem;
+  color: var(--titulo-fondo);
+  font-size: clamp(1.25rem, 5vw, 2rem);
+}
+
+.tarjeta span {
+  display: inline-flex;
+  padding: 0.15rem;
+  border-radius: 0.25rem;
+  background-color: var(--ancho-fondo);
+  position: absolute;
+  right: 0.15rem;
+  top: 0.15rem;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.tarjeta figure {
+  display: flex;
+  justify-content: center;
+  margin: 0 -1rem -1rem;
+}
+
+.tarjeta p {
+  font-size: clamp(0.85rem, 3vw, 1.15rem);
+  margin: 0 0 1rem;
+  font-weight: 400;
+}
+
+.tarjeta img {
+  display: block;
+  border-radius: 0 0 0.25rem 0.25rem;
+}
+
+.tarjeta1.min {
+  width: min(500px, 96vw);
+}
+
+.tarjeta1 img {
+  width: min(500px, 100%);
+}
+
+.tarjeta2.max {
+  width: max(500px, 96vw);
+}
+
+.tarjeta2 img {
+  width: max(500px, 50vw);
+}
+
+.tarjeta3.clamp {
+  width: clamp(500px, 75vw, 1000px);
+}
+
+.tarjeta3 img {
+  width: clamp(500px, 75vw, 100%);
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Min Max Clamp</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;800;900&display=swap">
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+    <section class="introduccion">
+        <h1>Clamp() <br/>Min() <br/>Max()</h1>
+        <ul>
+            <li>Son funciones matemáticas de CSS.</li>
+            <li>Nos permiten trabajar contenedores y tipografías flexibles.</li>
+            <li>Podriamos evitar usar media queries.</li>
+            <li>Realizan el calculo y presentan el valor resultante de uno de ellos.</li>
+        </ul>
+    </section>
+    <section>
+        <div class="tarjeta tarjeta1 min" id="tarjeta1">
+            <h2>Min(VAL1, VAL2, ...)</h2>
+            <h4>Tarjeta 1</h4>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            <figure>
+                <img src="https://i.picsum.photos/id/440/536/354.jpg?hmac=6i7nf3sDCo7ZOJiZUEuSgzeksMRFxMb3n46je6U-RCM" alt="" />
+            </figure>
+            <span id="ancho1"></span>
+        </div>
+    </section>
+    <section>
+        <div class="tarjeta tarjeta2 max" id="tarjeta2">
+            <h2>Max(VAL1, VAL2, ...)</h2>
+            <h4>Tarjeta 2</h4>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            <figure>
+                <img src="https://i.picsum.photos/id/440/536/354.jpg?hmac=6i7nf3sDCo7ZOJiZUEuSgzeksMRFxMb3n46je6U-RCM" alt="" />
+            </figure>
+            <span id="ancho2"></span>
+        </div>
+    </section>
+    <section>
+        <div class="tarjeta tarjeta3 clamp" id="tarjeta3">
+            <h2>Clamp(MIN, VAL, MAX)</h2>
+            <h4>Tarjeta 3</h4>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            <figure>
+                <img src="https://i.picsum.photos/id/440/536/354.jpg?hmac=6i7nf3sDCo7ZOJiZUEuSgzeksMRFxMb3n46je6U-RCM" alt="" />
+            </figure>
+            <span id="ancho3"></span>
+        </div>
+    </section>
+    <section class="conclusion">
+        <div>
+            <h1>Conclusiones</h1>
+            <ul>
+                <li>Las funciones matemáticas de CSS, min(), max() y clamp() son muy potentes y están bien soportadas por los principales navegadores.</li>
+            </ul>
+            <h4>Recursos:</h4>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/clamp()" target="blank">https://developer.mozilla.org/en-US/docs/Web/CSS/clamp()</a></li>
+                <li><a href="https://www.w3.org/TR/css-values-4/" target="blank">https://www.w3.org/TR/css-values-4/</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units" target="blank">https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units</a></li>
+                <li><a href="https://www.smashingmagazine.com/2016/05/fluid-typography/" target="blank">https://www.smashingmagazine.com/2016/05/fluid-typography/</a></li>
+                <li><a href="https://caniuse.com/?search=clamp" target="blank">https://caniuse.com/?search=clamp</a></li>
+            </ul>
+        </div>
+    </section>
+    <script src="js/main.js"></script>
+</body>
+</html>
